@@ -1,12 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/normalize.css">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marc-Doodley | WDD 231 Course Home</title>
+  <meta name="description" content="Marc-Doodley's WDD 231 Web Frontend Development I course home page: about me, student photo, and Web Certificate Courses progress." />
+  <meta name="author" content="Marc-Doodley" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles/style.css" />
+
+  <script src="scripts/script.js" defer></script>
 </head>
 <body>
-   <p>My name is Marc-Doodley</p> 
+
+  <header>
+    <div class="brand">
+      <img src="images/flag_of_haiti.svg" alt="Site logo" class="logo" width="32" height="32" />
+      <span class="site-name">Marc-Doodley</span>
+    </div>
+
+    <button id="hamburger" class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="primaryNav">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+  <nav>
+    <ul id="primaryNav">
+      <li><a href="index.html" class="active" target="_blank">Home</a></li>
+      <li><a href="chamber.html" target="_blank">Chamber</a></li>
+      <li><a href="final.html" target="_blank">Final</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1>Home</h1>
+
+    <div class="intro-grid">
+      <section class="about-me">
+        <h2>About Me</h2>
+        <p>
+          I'm a Licence en Sciences Économiques student at the Faculté de Droit et des Sciences
+          Économiques (FDSE), Université d'État d'Haïti, currently finishing my graduation thesis
+          on macroeconomic determinants of imports in the Haitian economy. Alongside economics, I'm
+          building frontend development skills in WDD 231 to bring data-driven, tech-enabled ideas
+          for Haiti to life on the web. Outside of coursework, I follow forex markets, support Real
+          Madrid, and stay close to the economic realities shaping my country every day.
+        </p>
+      </section>
+
+      <section class="photo-section">
+        <h2>Student Photo</h2>
+        <img src="images/Profile-picture.jpeg" alt="Student photo placeholder" class="student-photo" width="300" height="260" />
+      </section>
+    </div>
+
+    <section class="certificate-courses">
+      <h2>Web Certificate Courses</h2>
+
+      <div class="filter-buttons">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="CSE">CSE</button>
+        <button class="filter-btn" data-filter="WDD">WDD</button>
+      </div>
+
+      <div id="courseCards" class="course-cards"></div>
+
+      <p class="credit-total">
+        The total credits for the courses listed above is <span id="creditTotal">0</span>
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="social-links">
+      <a href="https://x.com/Mkdl2002"><img src="images/twitter-x.svg" alt="X profile" width="16" height="16"></a>
+      <a href="https://linkedin.com/in/marc-doodley"><img src="images/linkedin.svg" alt="LinekedIn profile" width="16" height="16"></a> 
+      <a href="https://www.instagram.com/marcdoodleys?igsh=MWNpeXg5dWdqZjRjdw=="><img src="images/instagram.svg" alt="Instagram profile" width="16" height="16"></a>
+    </div>
+
+    <p>&copy; <span id="currentYear"></span> &bull; Marc-Doodley &bull; Haiti</p>
+
+    <p id="lastModified"></p>
+  </footer>
+
 </body>
+  </footer>
 </html>
