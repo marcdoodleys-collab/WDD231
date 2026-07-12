@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Annuaire des Membres | Chambre de Commerce de Port-au-Prince</title>
+  <meta name="description" content="Annuaire des entreprises membres de la Chambre de Commerce de Port-au-Prince : coordonnées, secteurs d'activité et niveaux d'adhésion." />
+  <meta name="author" content="Marc-Doodley" />
+
+  <!-- Métadonnées Open Graph pour le partage sur Facebook/Messenger -->
+  <meta property="og:title" content="Annuaire des Membres | Chambre de Commerce de Port-au-Prince" />
+  <meta property="og:description" content="Découvrez les entreprises membres de la Chambre de Commerce de Port-au-Prince." />
+  <meta property="og:image" content="images/logo.svg" />
+  <meta property="og:url" content="https://username.github.io/wdd231/chamber/directory.html" />
+  <meta property="og:type" content="website" />
+
+  <link rel="icon" href="images/Chamber.jpg" type="image" />
+
+  <!-- Ordre CSS obligatoire : normalize d'abord, puis small, puis larger -->
+  <link rel="stylesheet" href="styles/normalize.css" />
+  <link rel="stylesheet" href="styles/small.css" />
+  <link rel="stylesheet" href="styles/larges.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header>
+    <div class="brand">
+      <img src="images/Chamber.jpg" alt="Logo de la Chambre de Commerce de Port-au-Prince" class="logo" width="32" height="32" />
+      <span class="site-name">Chambre de Commerce de Port-au-Prince</span>
+    </div>
+
+    <button id="hamburger" class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="primaryNav">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+  <nav>
+    <ul id="primaryNav">
+      <li><a href="../index.html" target="_blank">Accueil</a></li>
+      <li><a href="directory.html" class="active" aria-current="page" target="_blank">Annuaire</a></li>
+      <li><a href="join.html" target="_blank">Adhésion</a></li>
+      <li><a href="discover.html" target="_blank">Découvrir</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===== MAIN ===== -->
+  <main>
+    <h1>Annuaire des Membres</h1>
+
+    <section class="directory-intro">
+      <p>
+        Retrouvez ci-dessous les entreprises membres de la Chambre de Commerce de
+        Port-au-Prince. Utilisez les boutons ci-dessous pour basculer entre un
+        affichage en grille ou en liste.
+      </p>
+
+      <div class="view-toggle" role="group" aria-label="Choix de l'affichage">
+        <button id="gridViewBtn" class="toggle-btn active" aria-pressed="true" aria-label="Afficher en grille">
+          <!-- Icône grille -->
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+            <rect x="3" y="3" width="8" height="8" fill="currentColor" />
+            <rect x="13" y="3" width="8" height="8" fill="currentColor" />
+            <rect x="3" y="13" width="8" height="8" fill="currentColor" />
+            <rect x="13" y="13" width="8" height="8" fill="currentColor" />
+          </svg>
+        </button>
+        <button id="listViewBtn" class="toggle-btn" aria-pressed="false" aria-label="Afficher en liste">
+          <!-- Icône liste -->
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+            <rect x="3" y="4" width="18" height="3" fill="currentColor" />
+            <rect x="3" y="10.5" width="18" height="3" fill="currentColor" />
+            <rect x="3" y="17" width="18" height="3" fill="currentColor" />
+          </svg>
+        </button>
+      </div>
+    </section>
+
+    <section id="directory" class="directory-grid">
+      <!-- Les cartes des membres sont injectées ici par js/directory.js -->
+      <p class="loading-message">Chargement des membres...</p>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="footer-contact">
+      <p>Chambre de Commerce de Port-au-Prince</p>
+      <p>123 Rue Capois, Port-au-Prince, Haïti</p>
+      <p>contact@ccpap.ht &nbsp;|&nbsp; (509) 2222-3333</p>
+    </div>
+
+    <div class="social-links">
+      <a href="https://x.com/Mkdl2002"><img src="images/twitter-x.svg" alt="X profile" width="16" height="16"></a>
+      <a href="https://linkedin.com/in/marc-doodley"><img src="images/linkedin.svg" alt="LinkedIn profile" width="16"
+          height="16"></a>
+      <a href="https://www.instagram.com/marcdoodleys?igsh=MWNpeXg5dWdqZjRjdw=="><img src="images/instagram.svg"
+          alt="Instagram profile" width="16" height="16"></a>
+
+    <div class="footer-meta">
+      <p>&copy; <span id="copyrightYear"></span> &bull; Marc-Doodley &bull; WDD 231 &bull; Haïti</p>
+      <p id="lastModified"></p>
+      <p><a href="data/members.json" target="_blank" rel="noopener">Voir les données (members.json)</a></p>
+    </div>
+  </footer>
+
+  <script src="scripts/directory.js"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+/* larger.css — ajustements pour écrans plus larges (tablette et desktop) */
+
+@media screen and (min-width: 640px) {
+  h1 {
+    font-size: 2.1rem;
+  }
+
+  /* La grille passe à 2 colonnes */
+  .directory-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .directory-grid.list-view {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  /* Navigation horizontale, hamburger masqué */
+  .hamburger {
+    display: none;
+  }
+
+  #primaryNav {
+    display: flex;
+    flex-direction: row;
+    position: static;
+    background-color: transparent;
+  }
+
+  #primaryNav li a {
+    color: var(--color-dark);
+    border-top: none;
+    padding: 0.5rem 1rem;
+    border-radius: var(--radius);
+  }
+
+  #primaryNav li a:hover,
+  #primaryNav li a.active {
+    background-color: var(--color-light-gray);
+    color: var(--color-dark);
+    padding-left: 1rem;
+  }
+
+  /* La grille passe à 3 colonnes */
+  .directory-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .directory-grid.list-view {
+    grid-template-columns: 1fr;
+  }
+
+  /* Footer sur une ligne */
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    padding: 1.2rem 2rem;
+  }
+
+  .social-links {
+    margin: 0;
+  }
+}

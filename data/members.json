@@ -1,0 +1,81 @@
+{
+  "members": [
+    {
+      "id": 1,
+      "name": "Sogebank",
+      "address": "Angle rues Darguin & Geffrard, Pétion-Ville",
+      "phone": "(509) 2229-5000",
+      "website": "https://www.sogebank.com/",
+      "image": "../images/sogebank.jpeg",
+      "sector": "Banque et services financiers",
+      "membershipLevel": 3,
+      "description": "L'une des plus grandes banques commerciales d'Haïti, offrant des services bancaires aux particuliers et aux entreprises."
+    },
+    {
+      "id": 2,
+      "name": "Digicel Haïti",
+      "address": "#151 Angle Ave Jean Paul II & Impasse Duverger Port-au-Prince, Haïti PO BOX 15516",
+      "phone": "(509) 3711-3444",
+      "website": "https://www.digicelgroup.com/ht/en",
+      "image": "../images/digicel.webp",
+      "sector": "Télécommunications",
+      "membershipLevel": 3,
+      "description": "Opérateur de téléphonie mobile et de services internet leader sur le marché haïtien."
+    },
+    {
+      "id": 3,
+      "name": "Société du Rhum Barbancourt",
+      "address": "La Société du Rhum Barbancourt S.A. 16, Route Nationale #1, DamienPlaine du Cul-de-Sac,Port-au-Prince, Haiti, HT6124",
+      "phone": "(509) 2816-3090 | 2811-8080",
+      "website": "https://barbancourt.com/en",
+      "image": "../images/barbancourt.jpeg",
+      "sector": "Agroalimentaire et distillerie",
+      "membershipLevel": 2,
+      "description": "Distillerie haïtienne fondée en 1862, reconnue mondialement pour la qualité de son rhum vieilli."
+    },
+    {
+      "id": 4,
+      "name": "Épi d'Or",
+      "address": "Delmas 32, Cité Mosaïque, Département de l'Ouest",
+      "phone": "(509) 4425-2777",
+      "website": "http://www.epidorhaiti.com",
+      "image": "../images/epi.png",
+      "sector": "Boulangerie et agroalimentaire",
+      "membershipLevel": 2,
+      "description": "Chaîne de boulangeries et pâtisseries parmi les plus populaires de la région métropolitaine."
+    },
+    {
+      "id": 5,
+      "name": "Caribbean Supermarket",
+      "address": "51 Rue Metellus, Pétion-Ville, Département de l'Ouest",
+      "phone": "(509) 3113-3333",
+      "website": "https://www.caribbeanmarket.ht",
+      "image": "../images/caribbean.png",
+      "sector": "Distribution et supermarché",
+      "membershipLevel": 1,
+      "description": "Supermarché offrant une large gamme de produits locaux et importés pour les résidents de la capitale."
+    },
+    {
+      "id": 6,
+      "name": "Sunrise Airways",
+      "address": "Boulevard Toussaint Louverture, Route de l’Aéroport, Port-au-Prince, Haiti 6140, HT ",
+      "phone": "(509) 2811-2222",
+      "website": "https://www.sunriseairways.net/en",
+      "image": "../images/sunrise.svg",
+      "sector": "Transport aérien",
+      "membershipLevel": 3,
+      "description": "Compagnie aérienne haïtienne assurant des liaisons régionales dans les Caraïbes."
+    },
+    {
+      "id": 7,
+      "name": "Hôtel Montana",
+      "address": "Rue Frank Cardozo, PO Box 523 Pétion-Ville, Haïti",
+      "phone": "(509) 2940-0584",
+      "website": "https://www.hotelmontanahaiti.com/",
+      "image": "../images/montana.svg",
+      "sector": "Hôtellerie et tourisme",
+      "membershipLevel": 2,
+      "description": "Hôtel de renom offrant hébergement, événements et vue panoramique sur Port-au-Prince."
+    }
+  ]
+}
