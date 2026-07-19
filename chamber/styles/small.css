@@ -426,8 +426,9 @@ footer a {
 }
 
 .hero-content p {
-  color: #88b8ff;
-  font-size: 0.95rem;
+  color: #e0bdbd;
+  font-weight: bolder;
+  font-size: 15rem;
   margin: 0;
   max-width: 32ch;
 }
