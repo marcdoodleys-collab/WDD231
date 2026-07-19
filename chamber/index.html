@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Accueil | Chambre de Commerce de Port-au-Prince</title>
+  <meta name="description" content="Page d'accueil de la Chambre de Commerce de Port-au-Prince : événements, météo locale, et entreprises membres à l'honneur." />
+  <meta name="author" content="Marc-Doodley" />
+
+  <!-- Métadonnées Open Graph pour le partage sur Facebook/Messenger -->
+  <meta property="og:title" content="Chambre de Commerce de Port-au-Prince" />
+  <meta property="og:description" content="Découvrez les événements, la météo locale et les entreprises membres de la Chambre de Commerce de Port-au-Prince." />
+  <meta property="og:image" content="https://marcdoodleys-collab.github.io/wdd231/chamber/images/chamber.jpg" />
+  <meta property="og:url" content="https://marcdoodleys-collab.github.io/wdd231/chamber/index.html" />
+  <meta property="og:type" content="website" />
+
+  <link rel="icon" href="images/chamber.jpg" />
+
+  <!-- Ordre CSS obligatoire : normalize d'abord, puis small, puis larger -->
+  <link rel="stylesheet" href="styles/normalize.css" />
+  <link rel="stylesheet" href="styles/small.css" />
+  <link rel="stylesheet" href="styles/larges.css" />
+  <script src="scripts/home.js" defer></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header>
+    <div class="brand">
+      <img src="images/chamber.jpg" alt="Logo de la Chambre de Commerce de Port-au-Prince" class="logo" width="32" height="32" />
+      <span class="site-name">Chambre de Commerce de Port-au-Prince</span>
+    </div>
+
+    <button id="hamburger" class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="primaryNav">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+  <nav>
+    <ul id="primaryNav">
+      <li><a href="index.html" class="active" aria-current="page" target="_blank">Accueil</a></li>
+      <li><a href="directory.html" target="_blank">Annuaire</a></li>
+      <li><a href="join.html" target="_blank">Adhésion</a></li>
+      <li><a href="discover.html" target="_blank">Découvrir</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===== MAIN ===== -->
+  <main>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero">
+      <img src="images/hero.png" alt="Illustration stylisée de la skyline de Port-au-Prince au coucher du soleil du ministere de l'economie et des finances, le plus grand acteur cle du CCI " class="hero-image" />
+      <div class="hero-content">
+        <h1>Chambre de Commerce de Port-au-Prince</h1>
+        <p>Connecter, soutenir et faire grandir les entreprises de la capitale haïtienne.</p>
+        <a href="join.html" class="cta-btn" target="_blank">Adhérer à la Chambre</a>
+      </div>
+    </section>
+
+    <!-- ===== ÉVÉNEMENTS ===== -->
+    <section class="events">
+      <h2>Événements à venir</h2>
+      <div class="event-cards">
+        <article class="event-card">
+          <p class="event-date">Continu</p>
+          <h3>Forums économiques &amp; réseautage d'affaires</h3>
+          <p>Organisés par la Chambre de Commerce et de l'Industrie Haïti (CCIH), ces rencontres permettent aux entrepreneurs de tisser des relations stratégiques avec des partenaires locaux et étrangers.</p>
+        </article>
+
+        <article class="event-card">
+          <p class="event-date">Inscriptions ouvertes</p>
+          <h3>Projet d'Appui à l'Entrepreneuriat Féminin (PAEF)</h3>
+          <p>Le Ministère du Commerce et de l'Industrie soutient les femmes entrepreneures à travers tout le pays via des projets porteurs d'innovation et de création de revenus.</p>
+        </article>
+
+        <article class="event-card">
+          <p class="event-date">Formation continue</p>
+          <h3>Ateliers gestion, marketing digital &amp; conformité</h3>
+          <p>Des séminaires réguliers pour renforcer les capacités des chefs d'entreprise et de leurs équipes sur des thématiques essentielles à la croissance.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== MÉTÉO ===== -->
+    <section class="weather">
+      <h2>Météo à Port-au-Prince</h2>
+      <div id="weatherContainer" class="weather-container">
+        <p class="loading-message">Chargement de la météo...</p>
+      </div>
+    </section>
+
+    <!-- ===== SPOTLIGHTS ===== -->
+    <section class="spotlights">
+      <h2>Nos Membres à l'Honneur</h2>
+      <div id="spotlightContainer" class="spotlight-cards">
+        <p class="loading-message">Chargement des membres...</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="footer-contact">
+      <p>Chambre de Commerce de Port-au-Prince</p>
+      <p>123 Rue Capois, Port-au-Prince, Haïti</p>
+      <p>contact@ccpap.ht &nbsp;|&nbsp; (509) 2222-3333</p>
+    </div>
+
+    <div class="social-links">
+      <a href="https://x.com/Mkdl2002"><img src="images/twitter-x.svg" alt="X profile" width="16" height="16"></a>
+      <a href="https://linkedin.com/in/marc-doodley"><img src="images/linkedin.svg" alt="LinkedIn profile" width="16"
+          height="16"></a>
+      <a href="https://www.instagram.com/marcdoodleys?igsh=MWNpeXg5dWdqZjRjdw=="><img src="images/instagram.svg"
+          alt="Instagram profile" width="16" height="16"></a>
+    </div>
+    <div class="footer-meta">
+      <p>&copy; <span id="copyrightYear"></span> &bull; Marc-Doodley &bull; WDD 231 &bull; Haïti</p>
+      <p id="lastModified"></p>
+      <p><a href="data/members.json" target="_blank" rel="noopener">Voir les données (members.json)</a></p>
+    </div>
+  </footer>
+
+</body>
+</html>
